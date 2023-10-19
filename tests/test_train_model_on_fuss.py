@@ -1,5 +1,5 @@
 from models.neurips2020_mixit.train_model_on_fuss import train_model_on_fuss
-from tests._paths import ROOT_PATH
+from tests.paths import ROOT_PATH
 
 
 def test_train_model_on_fuss():
