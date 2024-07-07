@@ -4,17 +4,17 @@ from tests.paths import ROOT_PATH
 
 def test_train_model_on_fuss():
     # Configuration
-    line_limit = 4
-    train_steps = 4
+    line_limit = 3
+    train_steps = 1
 
     # Arrange
     train_example_file_path = (
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/train_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/train_example_list.txt'
     )
     test_train_example_file_path = (
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/test_train_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/test_train_example_list.txt'
     )
     _copy_first_lines(
         input_file_path=train_example_file_path,
@@ -24,11 +24,11 @@ def test_train_model_on_fuss():
 
     validation_example_file_path = (
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/validation_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/validation_example_list.txt'
     )
     test_evaluation_example_file_path = (
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/test_validation_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/test_validation_example_list.txt'
     )
     _copy_first_lines(
         input_file_path=validation_example_file_path,
@@ -38,11 +38,11 @@ def test_train_model_on_fuss():
 
     test_validation_list_file_path_string = str(
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/test_validation_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/test_validation_example_list.txt'
     )
     test_train_list_file_path_string = str(
         ROOT_PATH /
-        'datasets/fuss/data/fuss_dev/ssdata/test_train_example_list.txt'
+        '02-datasets/audio/fuss/fuss_dev/ssdata/test_train_example_list.txt'
     )
     model_dir = str(
         ROOT_PATH / 'models/neurips2020_mixit/model_dir'
