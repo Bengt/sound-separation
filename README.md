@@ -31,13 +31,14 @@ python3.10 -m venv venv
 ```
 
 ```bash
-venv/bin/python -m pip install --upgrade pip wheel
+venv/bin/python install --timeout 1 --upgrade pip setuptools wheel
 ```
 
 ```bash
-venv/bin/python -m pip install -r requirements.in
+venv/bin/python install --timeout 1 -r requirements.in
 ```
 
 ```bash
-venv/bin/python -m pip freeze > requirements.txt
+venv/bin/python freeze > requirements.txt
 ```
+
