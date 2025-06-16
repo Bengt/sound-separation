@@ -1,5 +1,9 @@
 attrs
-tensorflow==2.15.1
 immutabledict
+librosa
+matplotlib
+numpy
 pytest
 pytest-cov
+soundfile
+tensorflow
